@@ -2,7 +2,8 @@ import { TodoCounter } from "./TodoCounter";
 import { TodoSearch } from "./TodoSearch";
 import { TodoList } from "./TodoList";
 import { TodoItem } from "./TodoItem";
-import { CreateTodoButton } from "./CreateTodoButton";
+import { CreateTask } from "./create-task/CreateTask";
+
 import React from "react";
 import "./App.css";
 
@@ -15,22 +16,28 @@ const defaultTodos = [
 
 function App() {
   return (
-    <React.Fragment>
-      <TodoCounter completed={23} total={31} />
-      <TodoSearch />
+    <>
+      <section className="Container-app">
+        <div className="Container-createT">
+          <CreateTask />
+        </div>
+        <div className="Container-tasks">
+          <h1>Your Tasks</h1>
+          <TodoCounter completed={23} total={31} />
+          <TodoSearch />
 
-      <TodoList>
-        {defaultTodos.map((todo) => (
-          <TodoItem
-            key={todo.text}
-            text={todo.text}
-            completed={todo.completed}
-          />
-        ))}
-      </TodoList>
-
-      <CreateTodoButton />
-    </React.Fragment>
+          <TodoList>
+            {defaultTodos.map((todo) => (
+              <TodoItem
+                key={todo.text}
+                text={todo.text}
+                completed={todo.completed}
+              />
+            ))}
+          </TodoList>
+        </div>
+      </section>
+    </>
   );
 }
 
