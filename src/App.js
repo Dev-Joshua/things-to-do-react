@@ -22,7 +22,7 @@ function App() {
           <CreateTask />
         </div>
         <div className="Container-tasks">
-          <h1>Your Tasks</h1>
+          <h1>Your tasks</h1>
           <TodoCounter completed={23} total={31} />
           <TodoSearch />
 
