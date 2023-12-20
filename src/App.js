@@ -9,8 +9,8 @@ import "./App.css";
 
 const defaultTodos = [
   { text: "Programar en React", completed: true },
-  { text: "Hacer ejercicio", completed: false },
-  { text: "Sacar a Zeus", completed: true },
+  { text: "Hacer ejercicio", completed: true },
+  { text: "Sacar a Zeus", completed: false },
   { text: "Implementar el nuevo componente en el proyecto", completed: false },
 ];
 

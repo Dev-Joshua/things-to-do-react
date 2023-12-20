@@ -1,5 +1,36 @@
 .TodoItem {
   display: flex;
   align-items: center;
-  gap: 20px;
+  margin: 20px 0;
+  gap: 15px;
+  background-color: #effbfa;
+  border-radius: 8px;
+}
+.complete {
+  opacity: 0.5;
+}
+
+.TodoItem-p {
+  font-size: 18px;
+  font-weight: 400;
+  width: calc(100% - 120px);
+  line-height: 24px;
+}
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
+
+.Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 20px;
+  width: 50px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.Icon-check--active {
+  color: aquamarine;
 }
