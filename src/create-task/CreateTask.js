@@ -8,7 +8,7 @@ function CreateTask() {
     <>
       <h2>Create new task</h2>
       <label>Task Name</label>
-      <input type="text" />
+      <input placeholder="Enter a new task..." type="text" />
       <CreateTodoButton />
       <img src={taskImage} alt="tasks" />
     </>

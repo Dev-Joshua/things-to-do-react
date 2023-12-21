@@ -4,4 +4,13 @@ h2 {
 
 label {
   font-size: 14px;
+  font-weight: bold;
+}
+
+input {
+  height: 30px;
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 12px;
 }
