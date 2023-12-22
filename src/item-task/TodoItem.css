@@ -1,3 +1,7 @@
+/* .Container {
+  display: flex;
+  flex-direction: column-reverse;
+} */
 .TodoItem {
   display: flex;
   align-items: center;
@@ -6,8 +10,9 @@
   background-color: #effbfa;
   border-radius: 8px;
 }
-.complete {
+.Complete {
   opacity: 0.5;
+  display: flex;
 }
 
 .TodoItem-p {

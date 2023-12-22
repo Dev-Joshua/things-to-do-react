@@ -2,7 +2,7 @@ import "./TodoItem.css";
 
 function TodoItem(props) {
   return (
-    <li className="TodoItem complete">
+    <li className={`TodoItem ${props.completed && "Complete"}`}>
       <span className={`Icon  ${props.completed && "Icon-check--active"}`}>
         O
       </span>

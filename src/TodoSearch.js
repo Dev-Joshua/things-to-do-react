@@ -1,4 +1,6 @@
-function TodoSearch() {
+import React from "react";
+
+function TodoSearch(props) {
   return (
     <div style={{ display: "flex", justifyContent: "center", margin: "25px" }}>
       <input
@@ -11,8 +13,12 @@ function TodoSearch() {
           fontSize: "12px",
           width: "50%",
         }}
+        value={props.searchValue}
         type="text"
-        placeholder="Ingresa un dato"
+        placeholder="Enter a task"
+        onChange={(event) => {
+          props.setSearchValue(event.target.value);
+        }}
       />
     </div>
   );

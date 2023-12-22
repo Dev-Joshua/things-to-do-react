@@ -1,7 +1,7 @@
 import { TodoCounter } from "./TodoCounter";
 import { TodoSearch } from "./TodoSearch";
 import { TodoList } from "./TodoList";
-import { TodoItem } from "./TodoItem";
+import { TodoItem } from "./item-task/TodoItem";
 import { CreateTask } from "./create-task/CreateTask";
 
 import React from "react";
@@ -9,12 +9,21 @@ import "./App.css";
 
 const defaultTodos = [
   { text: "Programar en React", completed: true },
-  { text: "Hacer ejercicio", completed: true },
+  { text: "Hacer ejercicios de torso", completed: true },
   { text: "Sacar a Zeus", completed: false },
   { text: "Implementar el nuevo componente en el proyecto", completed: false },
+  { text: "Usar estados en React", completed: false },
 ];
 
 function App() {
+  const [todos, setTodos] = React.useState(defaultTodos);
+  const [searchValue, setSearchValue] = React.useState("");
+
+  const completedTodos = todos.filter((todo) => !!todo.completed).length;
+  const totalTodos = todos.length;
+
+  console.log("Los usuarios buscan " + searchValue);
+
   return (
     <>
       <section className="Container-app">
@@ -23,8 +32,11 @@ function App() {
         </div>
         <div className="Container-tasks">
           <h1>Your tasks</h1>
-          <TodoCounter completed={23} total={31} />
-          <TodoSearch />
+          <TodoCounter completed={completedTodos} total={totalTodos} />
+          <TodoSearch
+            searchValue={searchValue}
+            setSearchValue={setSearchValue}
+          />
 
           <TodoList>
             {defaultTodos.map((todo) => (

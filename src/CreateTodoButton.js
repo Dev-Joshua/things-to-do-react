@@ -10,6 +10,10 @@ function CreateTodoButton() {
         fontSize: "15px",
         letterSpacing: "0.5px",
       }}
+      onClick={(event) => {
+        console.log("diste un click");
+        console.log(event);
+      }}
     >
       Create task
     </button>
