@@ -1,7 +1,7 @@
-import { CreateTodoButton } from "../CreateTodoButton";
+import { CreateTodoButton } from "../create-task-button/CreateTodoButton";
 import React from "react";
 import "./CreateTask.css";
-import taskImage from "../assets/16736617_5802647.svg";
+import taskImage from "../assets/createTaskImg.svg";
 
 function CreateTask() {
   return (
@@ -10,7 +10,7 @@ function CreateTask() {
       <label>Task Name</label>
       <input placeholder="Enter a new task..." type="text" />
       <CreateTodoButton />
-      <img src={taskImage} alt="tasks" />
+      <img style={{ marginTop: "50px" }} src={taskImage} alt="tasks" />
     </>
   );
 }
