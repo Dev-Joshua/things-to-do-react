@@ -1,7 +1,8 @@
 function TodoCounter({ total, completed }) {
   return (
     <p style={{ textAlign: "center" }}>
-      Has completado {completed} de {total} TODOS
+      Has completado <strong>{completed}</strong> de <strong>{total}</strong>{" "}
+      TODOs
     </p>
   );
 }
