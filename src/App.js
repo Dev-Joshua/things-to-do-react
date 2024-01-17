@@ -1,10 +1,10 @@
+import React from "react";
 import { TodoCounter } from "./TodoCounter";
 import { TodoSearch } from "./TodoSearch";
 import { TodoList } from "./TodoList";
 import { TodoItem } from "./item-task/TodoItem";
 import { CreateTask } from "./create-task/CreateTask";
 
-import React from "react";
 import "./App.css";
 
 const defaultTodos = [
@@ -26,7 +26,19 @@ function App() {
     return todo.text.toLowerCase().includes(searchValue.toLowerCase());
   });
 
-  console.log("Los usuarios buscan " + searchValue);
+  const completeTodo = (text) => {
+    const newTodos = [...todos];
+    const indexTodo = newTodos.findIndex((todo) => todo.text === text);
+    newTodos[indexTodo].completed = true;
+    setTodos(newTodos);
+  };
+
+  const deleteTodo = (text) => {
+    const newTodos = [...todos];
+    const indexTodo = newTodos.findIndex((todo) => todo.text === text);
+    newTodos.splice(indexTodo, 1);
+    setTodos(newTodos);
+  };
 
   return (
     <>
@@ -48,6 +60,8 @@ function App() {
                 key={todo.text}
                 text={todo.text}
                 completed={todo.completed}
+                onComplete={() => completeTodo(todo.text)}
+                onDelete={() => deleteTodo(todo.text)}
               />
             ))}
           </TodoList>
