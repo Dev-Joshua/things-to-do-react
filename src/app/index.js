@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocalStorage } from "../hooks/useLocalStorage";
+import { useLocalStorage } from "../Hooks/useLocalStorage";
 import { AppUI } from "./AppUI";
 
 import "./App.css";

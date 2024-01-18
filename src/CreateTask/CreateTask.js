@@ -1,4 +1,4 @@
-import { CreateTodoButton } from "../create-task-button/CreateTodoButton";
+import { CreateTodoButton } from "../CreateTaskButton/CreateTodoButton";
 import React from "react";
 import "./CreateTask.css";
 import taskImage from "../assets/createTaskImg.svg";

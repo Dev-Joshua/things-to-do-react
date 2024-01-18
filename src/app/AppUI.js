@@ -3,8 +3,11 @@ import React from "react";
 import { TodoCounter } from "../TodoCounter";
 import { TodoSearch } from "../TodoSearch";
 import { TodoList } from "../TodoList";
-import { TodoItem } from "../item-task/TodoItem";
-import { CreateTask } from "../create-task/CreateTask";
+import { TodoItem } from "../ItemTask/TodoItem";
+import { CreateTask } from "../CreateTask/CreateTask";
+import { TodosError } from "../TodosError";
+import { EmptyTodos } from "../EmptyTodos";
+import { TodosLoading } from "../TodosLoading";
 
 function AppUI(props) {
   return (
@@ -23,12 +26,18 @@ function AppUI(props) {
             searchValue={props.searchValue}
             setSearchValue={props.setSearchValue}
           />
-
           <TodoList>
-            {props.loading && <p>Estamos cargando...</p>}
-            {props.error && <p>¡Ocurrio un error!</p>}
+            {props.loading && (
+              <>
+                <TodosLoading />
+                <TodosLoading />
+                <TodosLoading />
+                <TodosLoading />
+              </>
+            )}
+            {props.error && <TodosError />}
             {!props.loading && props.searchedTodos.length === 0 && (
-              <p>¡Crea tu primer TODO!</p>
+              <EmptyTodos />
             )}
             {props.searchedTodos.map((todo) => (
               <TodoItem
