@@ -1,6 +1,8 @@
 import React from "react";
+import { TodoContext } from "./TodoContext";
 
-function TodoSearch(props) {
+function TodoSearch() {
+  const { searchValue, setSearchValue } = React.useContext(TodoContext);
   return (
     <div
       style={{ display: "flex", justifyContent: "center", marginTop: "25px" }}
@@ -15,11 +17,11 @@ function TodoSearch(props) {
           fontSize: "12px",
           width: "100%",
         }}
-        value={props.searchValue}
+        value={searchValue}
         type="text"
         placeholder="Enter a task"
         onChange={(event) => {
-          props.setSearchValue(event.target.value);
+          setSearchValue(event.target.value);
         }}
       />
       <div style={{ display: "flex", alignItems: "center", cursor: "pointer" }}>

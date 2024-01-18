@@ -36,3 +36,14 @@ function useLocalStorage(itemName, initialValue) {
 }
 
 export { useLocalStorage };
+
+// const defaultTodos = [
+//   { text: "Programar en React", completed: true },
+//   { text: "Hacer ejercicios de torso", completed: true },
+//   { text: "Sacar a Zeus", completed: false },
+//   { text: "Implementar el nuevo componente en el proyecto", completed: false },
+//   { text: "Usar estados en React", completed: false },
+// ];
+
+// localStorage.setItem("Todos_v1", JSON.stringify(defaultTodos));
+// localStorage.removeItem("Todos_v1");
