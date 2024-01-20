@@ -2,12 +2,14 @@ button {
   padding: 12px;
   border-radius: 12px;
   border: none;
-  background-color: #ff8156;
+  background-color: #000;
   color: #fff;
   font-size: 15px;
   letter-spacing: 0.5px;
   cursor: pointer;
+  font-family: "Lemon", serif;
 }
 button:hover {
-  background-color: #97452a;
+  background-color: #b0acac;
+  font-weight: bold;
 }

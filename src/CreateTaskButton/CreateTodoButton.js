@@ -1,11 +1,11 @@
 import "./CreateTodoButtton.css";
 
-function CreateTodoButton() {
+function CreateTodoButton({ setOpenModal }) {
   return (
     <button
-      onClick={(event) => {
+      onClick={() => {
+        setOpenModal((state) => !state);
         console.log("diste un click");
-        console.log(event);
       }}
     >
       Create task
