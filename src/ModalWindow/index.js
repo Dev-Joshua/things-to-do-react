@@ -3,20 +3,32 @@ import "./ModalWindow.css";
 import { TodoContext } from "../TodoContext";
 
 function TodoWindow() {
-  const { setOpenModal } = React.useContext(TodoContext);
+  const { addTodo, setOpenModal } = React.useContext(TodoContext);
+  const [newTodoValue, setNewTodoValue] = React.useState("");
 
   const onSubmit = (event) => {
     event.preventDefault();
+    addTodo(newTodoValue);
     setOpenModal(false);
   };
 
   const onCancel = () => {
     setOpenModal(false);
   };
+
+  const onChange = (event) => {
+    setNewTodoValue(event.target.value);
+  };
+
   return (
     <form onSubmit={onSubmit}>
       <label>Write your todo...</label>
-      <textarea placeholder="Enter a new task..." type="text" />
+      <textarea
+        value={newTodoValue}
+        onChange={onChange}
+        placeholder="Enter a new task..."
+        type="text"
+      />
 
       <div className="TodoForm-buttonContainer">
         <button type="submit" className="TodoForm-button TodoForm-button--add">
