@@ -4,13 +4,7 @@ import { TodoContext } from "./TodoContext";
 function TodoCounter() {
   const { completedTodos, totalTodos } = React.useContext(TodoContext);
   return (
-    <p
-      style={{
-        textAlign: "center",
-        fontSize: "18px",
-        fontFamily: "Montserrat",
-      }}
-    >
+    <p>
       You have completed <strong>{completedTodos}</strong> of{" "}
       <strong>{totalTodos}</strong> tasks
     </p>

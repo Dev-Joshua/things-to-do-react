@@ -9,6 +9,7 @@
   gap: 15px;
   background-color: #effbfa;
   border-radius: 8px;
+  word-break: break-all;
 }
 .Complete {
   opacity: 0.5;

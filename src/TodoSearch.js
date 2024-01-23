@@ -11,15 +11,17 @@ function TodoSearch() {
         style={{
           height: "25px",
           border: "none",
-          borderRadius: "8px",
+          borderRadius: "30px",
           boxShadow: "6px 6px 8px 3px #EBB5A3",
-          padding: "5px 10px",
+          padding: "5px 12px",
           fontSize: "12px",
           width: "100%",
+          fontFamily: "Concert One",
+          marginLeft: "14px",
         }}
         value={searchValue}
         type="text"
-        placeholder="Enter a task"
+        placeholder="Search a task"
         onChange={(event) => {
           setSearchValue(event.target.value);
         }}

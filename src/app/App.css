@@ -26,13 +26,17 @@
   margin: 20px 0;
   font-size: 50px;
   background: rgb(2, 0, 36);
-  /* background: linear-gradient(
-    90deg,
-    rgba(310, 114, 80, 1) 31%,
-    rgba(2, 0, 36, 1) 66%
-  ); */
   color: transparent;
   -webkit-background-clip: text;
   text-align: center;
   font-family: "Lobster", sans-serif;
+}
+
+.Container-tasks p {
+  font-family: "Concert One", sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+.Container-tasks p strong {
+  color: #ffffff;
 }

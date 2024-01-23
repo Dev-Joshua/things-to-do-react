@@ -2,14 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Burned&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Burned&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lemon&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Burned&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(
     90deg,
     rgb(80 135 135) 10%,
@@ -17,9 +13,4 @@ body {
   );
   height: 100vh;
   width: 100vw;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

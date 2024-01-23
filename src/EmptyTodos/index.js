@@ -7,7 +7,8 @@ function EmptyTodos() {
         textAlign: "center",
         margin: "25px 0",
         fontWeight: "700",
-        fontFamily: "Montserrat",
+        fontFamily: "lemon",
+        color: "#fffcf8",
       }}
     >
       ¡Create your first task!
