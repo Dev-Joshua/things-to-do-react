@@ -29,5 +29,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "/Users/Victoria/Downloads/Programacion/Platzi/Platzi-2023/intro-react/intro-react/build/"
+  "homepage": "htts://Dev-Joshua.github.io/things-to-do-react",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
