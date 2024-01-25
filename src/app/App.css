@@ -27,14 +27,6 @@
 @media (max-width: 768px) {
   .Container-createT {
     display: none;
-    /* margin-left: 14px;
-    height: 35vh;
-    width: 45%;
-    margin-top: 0;
-    padding: 1em;
-    display: flex;
-    align-items: center;
-    gap: 4px; */
   }
   .Container-createT img {
     display: none;
