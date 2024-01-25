@@ -11,16 +11,15 @@ function CreateTask() {
   return (
     <>
       <h2>Create new task</h2>
-      <p>Click here to add a pending task that you have to do...</p>
-
       <CreateTodoButton setOpenModal={setOpenModal} />
-
       {openModal && (
         <Modal>
           <TodoWindow />
         </Modal>
       )}
-
+      <p className="Text-createTodo">
+        Click here to add a pending task that you have to do...
+      </p>
       <img style={{ marginTop: "50px" }} src={taskImage} alt="tasks" />
     </>
   );

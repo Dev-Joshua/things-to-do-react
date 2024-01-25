@@ -1,15 +1,21 @@
-/* .Container {
-  display: flex;
-  flex-direction: column-reverse;
-} */
 .TodoItem {
   display: flex;
   align-items: center;
-  margin: 20px 0;
-  gap: 15px;
+  margin: 8px 0;
   background-color: #effbfa;
   border-radius: 8px;
   word-break: break-all;
+  width: 80%;
+}
+@media (max-width: 720px) {
+  .TodoItem {
+    margin: 6px 0;
+    width: 90%;
+  }
+
+  .TodoItem-p {
+    font-size: 16px;
+  }
 }
 .Complete {
   opacity: 0.5;
@@ -17,7 +23,7 @@
 }
 
 .TodoItem-p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   width: calc(100% - 120px);
   line-height: 24px;
@@ -41,6 +47,10 @@
   color: rgb(7, 200, 30);
 }
 
+.Icon-check:hover {
+  color: rgb(7, 200, 30);
+}
+
 .Icon-delete:hover {
-  color: rgb(155, 158, 158);
+  color: rgb(215, 43, 43);
 }

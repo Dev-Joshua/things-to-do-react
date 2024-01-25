@@ -14,10 +14,11 @@ function TodoSearch() {
           borderRadius: "30px",
           boxShadow: "6px 6px 8px 3px #EBB5A3",
           padding: "5px 12px",
-          fontSize: "12px",
-          width: "100%",
+          fontSize: "15px",
+          width: "50%",
           fontFamily: "Concert One",
           marginLeft: "14px",
+          outlineColor: "#508787",
         }}
         value={searchValue}
         type="text"
