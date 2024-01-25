@@ -32,10 +32,10 @@ p {
   }
 }
 
-label {
+/* label {
   font-size: 14px;
   font-weight: bold;
-}
+} */
 
 input {
   height: 30px;
