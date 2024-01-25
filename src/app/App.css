@@ -5,8 +5,9 @@
   align-items: center;
   justify-content: space-evenly;
   margin: 0;
+  flex-direction: row;
 }
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .Container-app {
     flex-direction: column;
     justify-content: flex-start;
@@ -25,28 +26,24 @@
 }
 @media (max-width: 768px) {
   .Container-createT {
-    margin-left: 14px;
+    display: none;
+    /* margin-left: 14px;
     height: 35vh;
     width: 45%;
     margin-top: 0;
     padding: 1em;
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 4px; */
   }
   .Container-createT img {
     display: none;
   }
 }
-@media (max-width: 650px) {
-  .Container-createT {
-    margin-left: 0;
-    box-shadow: none;
-    margin-top: 15px;
-    gap: 0;
-    padding: 0;
-    height: 22vh;
-    width: 80%;
+
+@media (min-width: 769px) {
+  .CreateTaskMobile {
+    display: none;
   }
 }
 
@@ -67,6 +64,7 @@
   .Container-tasks {
     width: 100%;
     padding: 0;
+    margin-top: 5em;
   }
   .Container-tasks h1 {
     margin: 15px 0;

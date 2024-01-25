@@ -8,7 +8,7 @@ function EmptyTodos() {
         margin: "25px 0",
         fontWeight: "700",
         fontFamily: "lemon",
-        color: "#fffcf8",
+        color: "#000",
       }}
     >
       ¡Create your first task!

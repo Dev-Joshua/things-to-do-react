@@ -1,10 +1,12 @@
+import React from "react";
+
 import { CreateTodoButton } from "../CreateTaskButton/CreateTodoButton";
 import { Modal } from "../Modal";
 import { TodoContext } from "../TodoContext";
-import React from "react";
+import { TodoWindow } from "../ModalWindow";
+
 import "./CreateTask.css";
 import taskImage from "../assets/createTaskImg.svg";
-import { TodoWindow } from "../ModalWindow";
 
 function CreateTask() {
   const { openModal, setOpenModal } = React.useContext(TodoContext);

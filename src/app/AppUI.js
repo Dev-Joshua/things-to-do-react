@@ -9,15 +9,33 @@ import { TodosError } from "../TodosError";
 import { EmptyTodos } from "../EmptyTodos";
 import { TodosLoading } from "../TodosLoading";
 import { TodoContext } from "../TodoContext";
+import { CreateTaskMobile } from "../CreateTaskMobile";
+import { TodoWindow } from "../ModalWindow";
+import { Modal } from "../Modal";
 
 function AppUI() {
-  const { loading, error, completeTodo, deleteTodo, searchedTodos } =
-    React.useContext(TodoContext);
+  const {
+    loading,
+    error,
+    completeTodo,
+    deleteTodo,
+    searchedTodos,
+    setOpenModal,
+    openModal,
+  } = React.useContext(TodoContext);
   return (
     <>
       <section className="Container-app">
         <div className="Container-createT">
           <CreateTask />
+        </div>
+        <div className="CreateTaskMobile">
+          <CreateTaskMobile setOpenModal={setOpenModal} />
+          {openModal && (
+            <Modal>
+              <TodoWindow />
+            </Modal>
+          )}
         </div>
         <div className="Container-tasks">
           <h1>Your tasks</h1>

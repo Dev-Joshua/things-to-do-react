@@ -1,5 +1,6 @@
 .TodoItem {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   margin: 8px 0;
   background-color: #effbfa;

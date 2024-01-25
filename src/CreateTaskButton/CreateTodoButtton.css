@@ -3,7 +3,7 @@ button {
   padding: 12px;
   border-radius: 12px;
   border: none;
-  background-color: #000;
+  background-color: #d67859;
   color: #fff;
   font-size: 16px;
   letter-spacing: 0.5px;
@@ -11,7 +11,7 @@ button {
   font-family: "Lemon", serif;
 }
 button:hover {
-  background-color: #d67859;
+  background-color: #000;
   font-weight: bold;
 }
 @media (max-width: 768px) {
