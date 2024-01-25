@@ -1,6 +1,6 @@
 h2 {
   text-align: center;
-  font-size: 26px;
+  font-size: 30px;
   color: #fffcf8c9;
   font-family: "Lemon", serif;
   font-weight: 300;
@@ -10,7 +10,7 @@ h2 {
 p {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
 }
 @media (max-width: 768px) {
@@ -20,6 +20,15 @@ p {
   .Text-createTodo {
     font-size: 14px;
     margin-top: 30px;
+  }
+}
+@media (max-width: 650px) {
+  h2 {
+    margin: 35px 0 0;
+  }
+  .Text-createTodo {
+    margin: 10px;
+    font-size: 12px;
   }
 }
 

@@ -22,6 +22,7 @@ Things To Do es una aplicación simple de lista de tareas desarrollada con React
 - React Context (manejo del estado)
 - Loading Skeletons (carga esquelética)
 - React Portals (para la interfaz de usuario)
+- Responsive Design
 
 ## Capturas de Pantalla
 

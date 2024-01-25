@@ -5,7 +5,7 @@ button {
   border: none;
   background-color: #000;
   color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 0.5px;
   cursor: pointer;
   font-family: "Lemon", serif;
@@ -14,9 +14,16 @@ button:hover {
   background-color: #d67859;
   font-weight: bold;
 }
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   button {
-    margin-top: 20px;
+    margin-top: 15px;
+    font-size: 12px;
+    width: 50%;
+  }
+}
+@media (max-width: 650px) {
+  button {
+    margin-top: 15px;
     font-size: 12px;
     width: 50%;
   }

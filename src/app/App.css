@@ -6,9 +6,10 @@
   justify-content: space-evenly;
   margin: 0;
 }
-@media (min-width: 1024px) {
-  .Container-tasks {
-    width: 50%;
+@media (max-width: 650px) {
+  .Container-app {
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
 .Container-createT {
@@ -18,7 +19,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 3em;
+  padding: 2em;
   border-radius: 15px;
   box-shadow: 0px 8px 20px 6px rgba(196, 196, 196, 0.9);
 }
@@ -37,6 +38,17 @@
     display: none;
   }
 }
+@media (max-width: 650px) {
+  .Container-createT {
+    margin-left: 0;
+    box-shadow: none;
+    margin-top: 15px;
+    gap: 0;
+    padding: 0;
+    height: 22vh;
+    width: 80%;
+  }
+}
 
 .Container-tasks {
   width: 50%;
@@ -53,8 +65,12 @@
 }
 @media (max-width: 768px) {
   .Container-tasks {
-    width: 65%;
+    width: 100%;
     padding: 0;
+  }
+  .Container-tasks h1 {
+    margin: 15px 0;
+    font-size: 40px;
   }
 }
 .Container-tasks h1 {
@@ -72,14 +88,16 @@
   text-align: center;
   font-size: 20px;
 }
-.Container-tasks .TodoItem-p {
-}
+
 @media (max-width: 768px) {
   .Container-tasks .TodoItem-p {
-    font-family: "Concert One", sans-serif;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 18px;
+    line-height: 14px;
+  }
+  .Container-tasks .P-counter {
+    font-size: 18px;
   }
 }
 .Container-tasks p strong {
