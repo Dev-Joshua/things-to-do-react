@@ -16,6 +16,10 @@
   .TodoItem-p {
     font-size: 16px;
   }
+  .TodoItem .Icon {
+    width: 35px;
+    font-size: 18px;
+  }
 }
 .Complete {
   opacity: 0.5;
