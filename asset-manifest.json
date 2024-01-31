@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/things-to-do-react/static/css/main.b4407fa6.css",
+    "main.js": "/things-to-do-react/static/js/main.d57edc7d.js",
+    "static/media/createTaskImg.svg": "/things-to-do-react/static/media/createTaskImg.74c8cc2f13f77704f8ddc8b87bb0ca0a.svg",
+    "index.html": "/things-to-do-react/index.html",
+    "main.b4407fa6.css.map": "/things-to-do-react/static/css/main.b4407fa6.css.map",
+    "main.d57edc7d.js.map": "/things-to-do-react/static/js/main.d57edc7d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4407fa6.css",
+    "static/js/main.d57edc7d.js"
+  ]
+}
