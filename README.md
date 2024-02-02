@@ -1,7 +1,7 @@
-# Things To Do => https://dev-joshua.github.io/things-to-do-react/
+# Things To Do 
 
-Things To Do es una aplicación de lista de tareas desarrollada con React. Permite a los usuarios crear, marcar como completadas, eliminar y filtrar tareas. Además, las tareas se almacenan en el estado local para su persistencia.
-
+Things To Do es una aplicación de lista de tareas desarrollada con React. Permite a los usuarios crear, marcar como completadas, eliminar y filtrar tareas. Además, las tareas se almacenan en el estado local para su persistencia.<br>
+Enlace: https://dev-joshua.github.io/things-to-do-react/
 ## Características
 
 - Crear nuevas tareas
